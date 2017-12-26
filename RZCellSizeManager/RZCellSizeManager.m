@@ -66,6 +66,10 @@
                 continue;
             }
             
+            if (!firstItem || !secondItem) {
+                return;
+            }
+            
             NSLayoutConstraint* contentViewConstraint =
             [NSLayoutConstraint constraintWithItem:firstItem
                                          attribute:cellConstraint.firstAttribute
